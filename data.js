@@ -10,7 +10,7 @@ export class JournalDatabaseId {
   }
 
   static string(database_id = false) {
-    const stringDatabase = database_id ? database_id : process.env.NOTION_DATABASE_ID;
+    const stringDatabase = database_id ? database_id : process.env.NOTION_DATABASE_JOURNAL_ID;
     const result = stringDatabase.replace(/\-/g, '');
     return result
   }
@@ -23,7 +23,7 @@ export class ModelsDatabaseId {
   }
 
   static string(database_id = false) {
-    const stringDatabase = database_id ? database_id : process.env.NOTION_DATABASE_ID;
+    const stringDatabase = database_id ? database_id : process.env.NOTION_DATABASE_CONFIGURATION_ID;
     const result = stringDatabase.replace(/\-/g, '');
     return result
   }

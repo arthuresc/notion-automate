@@ -1,13 +1,14 @@
-import "./modules.js";
+import {Search, ModelsDatabaseId} from "./modules.js";
 
-  // JournalDatabaseId,
-  // ModelsDatabaseId,
-Search(ModelsDatabaseId.string)
-  .then((r) => {
+Search(ModelsDatabaseId.string())
+.then((r) => {
   console.log(r, '👽')
   // console.log(r.results[0].properties['Tags'].multi_select, "TAGS 🉐")
 })
+console.log(ModelsDatabaseId.string(), ' 😂')
 
+  // JournalDatabaseId,
+  // ModelsDatabaseId,
 
 // Search('Yurts')
 //   .then((r) => {
