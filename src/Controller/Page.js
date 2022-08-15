@@ -37,7 +37,8 @@ export default class Page {
       const response = await NotionClient.pages.properties.retrieve({ page_id: pageId, property_id: propId });
       console.log(response, '🦎')
       return response
-    } catch (error) {
+    }
+    catch (error) {
       return error
     }
   }
