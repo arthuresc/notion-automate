@@ -1,4 +1,4 @@
-import { NotionClient, DatabaseId } from "../../data.js";
+import { NotionClient, ModelsDatabaseId } from "../../data.js";
 
 
 /**
@@ -12,7 +12,7 @@ export default class Page {
   static async add(text) {
     try {
       const response = await NotionClient.pages.create({
-        parent: { database_id: DatabaseId },
+        parent: { database_id: ModelsDatabaseId },
         properties: {
           title: {
             title: [
